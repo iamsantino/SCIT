@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode not found in Retalix</title>
+    <link rel="stylesheet", href="./style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="./Index.html">Home</a>
+      </div>
+      <h2>Barcode not found in Retalix</h2>
+      <div class="content">
+        <H3>How to resolve</H3> 
+        1. Check barcode in Item look up of Storeline<br><br>
+        2. If barcode does not exist follow the below steps<br><br>
+        a. Option 1: If you have access in Retek DB execute "select item_parent,item from item_master where item='1234567891234' --- input 8-15 digits barcode" <br><br>        
+<img src="./css/barcode not found.png" alt="retekimg" style="width:700px;height:400px;"><br><br>
+b. Option 2: Use RTX-SKU-UPDATES-CHECKER utility to search the barcode<br><br>
+3. If barcode exists in Retek search the BX163 file using the below steps, else report it to CMRD<br><br>
+a. Option 1: Search the BX163 file in \\10.104.8.87\Backup$\OUTBOX\SKU\bbbb\   --- bbbb = 4 digits store code <br><br>
+b. Option 2: Search the BX163 file using RTX-SKU-UPDATES-CHECKER utility<br><br>
+<img src="./css/barcode not found2.png" alt="retekimg" style="width:700px;height:400px;"><br><br>
+c. Remove item code without issue in BX163 file and retain the item code with issue only<br><br>
+d. Check item code in Item look up of Storeline. If exist proceed to next step, else use procedure for "Item not found in Retalix"<br><br>
+e. Load the BX163 file in C:\Program Files\StoreLine\Office\Import\<br><br>
+Added by Lendon<br>	July 16, 2021
+      </div>
+<footer>
+    <p>Created by: Dexter F. Febrio <b>IT Helpdesk</b><br>
+    <a href="mailto:dexter.febrio@watsons.com.ph">dexter.febrio@watsons.com.ph</a></p>
+  </footer>
+</body>
+</html>
