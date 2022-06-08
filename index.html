@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('./css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+H2 {
+ /* text-align: center; */
+  padding: 3px;
+  background-color: #009994;
+  color: #e4f5f6;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #009994;
+  color: #e4f5f6;
+}
+</style>
+</head>
+<body>
+
+<h2>KEDB TROUBLESHOOTING PROCEDURES</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Issue</th>
+    <th style="width:40%;">Link</th>
+  </tr>
+  <tr>
+    <td>Promotion file not consumed by Retalix</td>
+    <td><a href="./Promofile not consumed by retalix.html">Open</a>
+    </td>
+  </tr>
+  <tr>
+    <td>No TLOG file extracted upon End of day</td>
+    <td><a href="./No TLOG file extracted upon End of day.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Item not found in Retalix</td>
+    <td><a href="./Item not found in Retalix.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Barcode not found in Retalix</td>
+    <td><a href="./Barcode not found in Retalix.html">Open</a></td>
+  </tr>
+  </tr>
+  <tr>
+    <td>Item price is not updated in Retalix</td>
+    <td><a href="./Item price is not updated in Retalix.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Fatal online error in POS</td>
+    <td><a href="./Fatal online error in POS.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Retalix End of day auto close</td>
+    <td><a href="./Retalix End of day auto close.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Long Retalix end of day</td>
+    <td><a href="./Long Retalix end of day.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>No EJ file extracted upon End of day</td>
+    <td><a href="./No EJ file extracted upon End of day.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Storeline User Addition</td>
+    <td><a href="./Storeline User Addition.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Storeline User Deletion</td>
+    <td><a href="./Storeline User Deletion.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Cashier Force Logout</td>
+    <td><a href="./Cashier Force Logout.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Multiple discount issue on POS / Auto discount</td>
+    <td><a href="./Multiple discount issue on POS or Auto discount.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>To check if the EOD of store was successful</td>
+    <td><a href="./To check if the EOD of store was successful.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Transaction is voided / not found  (Cashier can’t sign off)</td>
+    <td><a href="./Transaction is voided or not found.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Watsons Card always offline</td>
+    <td><a href="./Watsons Card always offline.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Un-aligned POS Receipt Print-out</td>
+    <td><a href="./Un-aligned POS Receipt Print-out.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Retalix storeline application already running but no icon in taskbar</td>
+    <td><a href="./Retalix storeline application already running but no icon in taskbar.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>No barcode on saved transaction</td>
+    <td><a href="./No barcode on saved transaction.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Ticket refund receipt is not in mirror copy</td>
+    <td><a href="./Ticket refund receipt is not in mirror copy.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>No connection to database server</td>
+    <td><a href="./No connection to database server.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Cannot proceed EOD due to Cashier Login in POS without Watsons Logo</td>
+    <td><a href="./Cannot proceed EOD due to Cashier Login in POS without Watsons Logo.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Over Pickup Issue</td>
+    <td><a href="./Over Pickup Issue.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Retalix Eservice F8 (Watsons Card Registration) is not working issue</td>
+    <td><a href="./Retalix Eservice F8 (Watsons Card Registration) is not working issue.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Cannot login in POS(Invalid User ID)</td>
+    <td><a href="./Cannot login in POS (Invalid User ID).html">Open</a></td>
+  </tr>
+  <tr>
+    <td>Cannot open the Retalix Storeline</td>
+    <td><a href="./Cannot open the Retalix Storeline.html">Open</a></td>
+  </tr>
+  <tr>
+    <td>BX file does not insert in Retalix (FrontOff Database)</td>
+    <td><a href="./BX file does not insert in Retalix (FrontOff Database).html">Open</a></td>
+  </tr>
+</table>
+
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+<br>
+<footer>
+  <p>Created by: Dexter F. Febrio <b>IT Helpdesk</b><br>
+  <a href="mailto:dexter.febrio@watsons.com.ph">dexter.febrio@watsons.com.ph</a></p>
+</footer>
+</body>
+</html>
